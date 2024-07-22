@@ -1,8 +1,8 @@
 import { UmiPlugin } from '@metaplex-foundation/umi';
-import { createMplProjectNameProgram } from './generated';
+import { createBglTowerDefenseProgram } from './generated';
 
-export const mplProjectName = (): UmiPlugin => ({
+export const bglTowerDefense = (): UmiPlugin => ({
   install(umi) {
-    umi.programs.add(createMplProjectNameProgram(), false);
+    umi.programs.add(createBglTowerDefenseProgram(), false);
   },
 });

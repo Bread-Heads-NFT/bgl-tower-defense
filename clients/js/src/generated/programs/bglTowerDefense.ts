@@ -13,22 +13,22 @@ import {
   PublicKey,
 } from '@metaplex-foundation/umi';
 import {
-  getMplProjectNameErrorFromCode,
-  getMplProjectNameErrorFromName,
+  getBglTowerDefenseErrorFromCode,
+  getBglTowerDefenseErrorFromName,
 } from '../errors';
 
-export const MPL_PROJECT_NAME_PROGRAM_ID =
-  'MyProgram1111111111111111111111111111111111' as PublicKey<'MyProgram1111111111111111111111111111111111'>;
+export const BGL_TOWER_DEFENSE_PROGRAM_ID =
+  'TWRNNbCoHv7ymsJAeSAD2ZQWnwWrAjD6YVwg7bam2Tb' as PublicKey<'TWRNNbCoHv7ymsJAeSAD2ZQWnwWrAjD6YVwg7bam2Tb'>;
 
-export function createMplProjectNameProgram(): Program {
+export function createBglTowerDefenseProgram(): Program {
   return {
-    name: 'mplProjectName',
-    publicKey: MPL_PROJECT_NAME_PROGRAM_ID,
+    name: 'bglTowerDefense',
+    publicKey: BGL_TOWER_DEFENSE_PROGRAM_ID,
     getErrorFromCode(code: number, cause?: Error) {
-      return getMplProjectNameErrorFromCode(code, this, cause);
+      return getBglTowerDefenseErrorFromCode(code, this, cause);
     },
     getErrorFromName(name: string, cause?: Error) {
-      return getMplProjectNameErrorFromName(name, this, cause);
+      return getBglTowerDefenseErrorFromName(name, this, cause);
     },
     isOnCluster() {
       return true;
@@ -36,20 +36,20 @@ export function createMplProjectNameProgram(): Program {
   };
 }
 
-export function getMplProjectNameProgram<T extends Program = Program>(
+export function getBglTowerDefenseProgram<T extends Program = Program>(
   context: Pick<Context, 'programs'>,
   clusterFilter?: ClusterFilter
 ): T {
-  return context.programs.get<T>('mplProjectName', clusterFilter);
+  return context.programs.get<T>('bglTowerDefense', clusterFilter);
 }
 
-export function getMplProjectNameProgramId(
+export function getBglTowerDefenseProgramId(
   context: Pick<Context, 'programs'>,
   clusterFilter?: ClusterFilter
 ): PublicKey {
   return context.programs.getPublicKey(
-    'mplProjectName',
-    MPL_PROJECT_NAME_PROGRAM_ID,
+    'bglTowerDefense',
+    BGL_TOWER_DEFENSE_PROGRAM_ID,
     clusterFilter
   );
 }

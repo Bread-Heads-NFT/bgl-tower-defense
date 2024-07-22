@@ -1,6 +1,6 @@
-# Contributing to Mpl Project Name
+# Contributing to Bgl Tower Defense
 
-This is a quick guide to help you contribute to Mpl Project Name.
+This is a quick guide to help you contribute to Bgl Tower Defense.
 
 ## Getting started
 

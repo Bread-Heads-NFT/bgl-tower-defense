@@ -1,6 +1,6 @@
-# Mpl Project Name
+# Bgl Tower Defense
 
-My project description
+A program for on-chain tower defense games
 
 ## Building
 

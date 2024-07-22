@@ -5,6 +5,6 @@
 //! [https://github.com/metaplex-foundation/kinobi]
 //!
 
-pub(crate) mod mpl_project_name;
+pub(crate) mod bgl_tower_defense;
 
-pub use self::mpl_project_name::MplProjectNameError;
+pub use self::bgl_tower_defense::BglTowerDefenseError;
